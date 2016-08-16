@@ -12,15 +12,14 @@ public class Bird : MonoBehaviour {
 	void Start () {
         rigidbodyComponent = GetComponent<Rigidbody>();
 	}
-	
+
 	// Update is called once per frame
 	void Update () {
-	    
+
 	}
 
     public void FlyForward(float flyingInput) {
         Vector3 direction = (transform.rotation * Vector3.forward) * PtakoPrędkość * flyingInput;
-        Debug.Log("asd " + direction);
         rigidbodyComponent.AddForce(direction);
     }
 
