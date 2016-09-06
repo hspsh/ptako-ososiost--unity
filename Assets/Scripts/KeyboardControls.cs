@@ -1,6 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+
+//Kontroler do ptaka, na razie czytający input z klawiatury
+//TODO czytanie inputu z magicznych urządzeń elektronicznych
 public class KeyboardControls : MonoBehaviour {
 
     public Bird birdToControl;
@@ -15,8 +18,8 @@ public class KeyboardControls : MonoBehaviour {
         ProcessMovement();
     }
     void ProcessMovement() {
-        birdToControl.FlyForward(Input.GetAxis("Vertical"));
-        
+        birdToControl.RotateRoll(Input.GetAxis("Vertical"));
+
         birdToControl.RotatePitch(Input.GetAxis("Horizontal"));
         birdToControl.RotateYaw(Input.GetAxis("RotateRight"));
     }
