@@ -117,8 +117,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 30118819}
   m_LocalRotation: {x: -0.22933325, y: -0, z: -0, w: 0.973348}
-  m_LocalPosition: {x: 0, y: 0.5299988, z: -2.39}
-  m_LocalScale: {x: 0.2, y: 1.5, z: 0.7000003}
+  m_LocalPosition: {x: 0, y: 0.53009033, z: -2.39}
+  m_LocalScale: {x: 0.19999999, y: 2.2660122, z: 1.0574728}
   m_LocalEulerAnglesHint: {x: -26.491001, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 814059946}
@@ -578,13 +578,13 @@ Transform:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 471083463}
-  m_LocalRotation: {x: 0.03489949, y: 0, z: 0, w: 0.99939084}
+  m_LocalRotation: {x: 0.03489949, y: -0, z: -0, w: 0.99939084}
   m_LocalPosition: {x: 0, y: 2.5, z: -15}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1.0154954, z: 1.0154955}
   m_LocalEulerAnglesHint: {x: 4, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 814059946}
-  m_RootOrder: 5
+  m_RootOrder: 4
 --- !u!81 &471083465
 AudioListener:
   m_ObjectHideFlags: 0
@@ -671,8 +671,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 492775695}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.25, z: -2.240004}
-  m_LocalScale: {x: 2.7, y: 0.2, z: 0.8}
+  m_LocalPosition: {x: 0, y: 0.24993896, z: -2.240004}
+  m_LocalScale: {x: 2.6999998, y: 0.19999999, z: 0.8000001}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 814059946}
@@ -991,8 +991,14 @@ GameObject:
   - 4: {fileID: 814059946}
   - 95: {fileID: 814059945}
   - 54: {fileID: 814059944}
+<<<<<<< HEAD
   - 114: {fileID: 814059943}
   - 114: {fileID: 814059947}
+=======
+  - 114: {fileID: 814059947}
+  - 114: {fileID: 814059948}
+  - 114: {fileID: 814059949}
+>>>>>>> parent of dbb0572... Revert "BirdCintroller"
   m_Layer: 0
   m_Name: Plane
   m_TagString: Untagged
@@ -1000,21 +1006,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &814059943
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114000014088076466, guid: d902eec31d4d95a44906fc12c1f6350e,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 814059942}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0b4e3de54fccab14a891c7befec85eb0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 40
-  deleyTimeWingsDown: 0.5
-  speedWings: 2.5
 --- !u!54 &814059944
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1056,17 +1047,17 @@ Transform:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 814059942}
-  m_LocalRotation: {x: -0, y: 0.26512298, z: -0, w: 0.9642146}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 1000, z: 0}
   m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
-  m_LocalEulerAnglesHint: {x: 0, y: 30.796001, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 1464106140}
   - {fileID: 1849486180}
   - {fileID: 30118820}
   - {fileID: 492775696}
-  - {fileID: 1920206541}
   - {fileID: 471083464}
+  - {fileID: 1920206541}
   m_Father: {fileID: 0}
   m_RootOrder: 3
 --- !u!114 &814059947
@@ -1077,7 +1068,46 @@ MonoBehaviour:
   m_GameObject: {fileID: 814059942}
   m_Enabled: 1
   m_EditorHideFlags: 0
+<<<<<<< HEAD
   m_Script: {fileID: 11500000, guid: d0dc619ae560c394392176e6cfdb8ac2, type: 3}
+=======
+  m_Script: {fileID: 11500000, guid: b59f392e91937794f8e396abd9535c88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 100
+  speedUpPerSecond: 0
+  divingDownSpeed: 3
+  divingUpSpeed: 5
+  wingsSpeed: 0
+  wingsMaxSpeed: 3
+  wingsInMoveSpeed: 2
+  reduceWingsSpeed: 1
+  wingsInDivingPositionSpeed: 5
+--- !u!114 &814059948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 814059942}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 818b830ff0fb3a047b332c1e4fed677f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  deleyTimeWingsDown: 1
+  reduceDeleyTimeWingsDown: 1
+  rotateFowardSensitive: 50
+  rotateRightSensitive: 50
+--- !u!114 &814059949
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 814059942}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f7ad5cfd5c929346947683f19df3090, type: 3}
+>>>>>>> parent of dbb0572... Revert "BirdCintroller"
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &1005101149
@@ -1490,7 +1520,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1464106139}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.1, y: 0, z: 1}
+  m_LocalPosition: {x: -0.10000001, y: 0, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -22.452002}
   m_Children:
@@ -1634,6 +1664,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   birdPosition: {fileID: 814059946}
   target: {fileID: 387512960}
+  line: {fileID: 0}
+  distanceToCheck: 6
+  targetNumber: 1
   distance: {x: 0, y: 0, z: 0}
 --- !u!4 &1553356863
 Transform:
@@ -1846,8 +1879,8 @@ Transform:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1849486179}
-  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 0.1, y: 0, z: 1}
+  m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
+  m_LocalPosition: {x: 0.10000001, y: 0, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
   m_Children:
@@ -1916,13 +1949,13 @@ Transform:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1920206540}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 5}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 814059946}
-  m_RootOrder: 4
+  m_RootOrder: 5
 --- !u!23 &1920206542
 MeshRenderer:
   m_ObjectHideFlags: 0
