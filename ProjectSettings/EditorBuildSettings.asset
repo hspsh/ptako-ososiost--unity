@@ -4,10 +4,4 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes:
-  - enabled: 1
-    path: Assets/Scens/GUI/MainScene.unity
-  - enabled: 1
-    path: Assets/Scens/Maps/DeltaRiver.unity
-  - enabled: 1
-    path: Assets/Scens/GUI/Score.unity
+  m_Scenes: []
